@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.seat{
+    transition: 0.4s all;
+}
+
+.booked{
+    color: #eaeaea;
+}
+
+.selecting{
+    color: #ff9e00;
+}
+
+i.fa{
+    cursor: pointer;
+    font-size: 22px;
+}
