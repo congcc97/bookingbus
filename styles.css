@@ -15,7 +15,37 @@
     color: #ff9e00;
 }
 
-i.fa{
+#chonghe i.fa{
     cursor: pointer;
     font-size: 22px;
+}
+
+#chonghe{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.hidechontuyen{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.showchonghe{
+    visibility: visible!important;
+    opacity: 1!important;
+    display: inherit!important;
+}
+
+.hide-thong-tin-khach-hang{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.hidethanhtoan{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
 }

@@ -1,4 +1,48 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    var denChonGhe = document.getElementById('btn-muave');
+    var chonghe = document.getElementById('chonghe');
+    var chontuyen = document.getElementById('chontuyen');
+    var thongtinkhachhang = document.getElementById('thong-tin-khach-hang');
+
+    denChonGhe.onclick = function() {
+        chonghe.classList.add('showchonghe');
+        chontuyen.classList.add('hidechontuyen');
+    }
+
+    var quaylaichontuyen = document.getElementById('quaylaichontuyen');
+
+    quaylaichontuyen.onclick = function() {
+        chontuyen.classList.remove('hidechontuyen');
+        chonghe.classList.remove('showchonghe');
+    }
+
+    var denthongtin = document.getElementById('denthongtin');
+    denthongtin.onclick = function() {
+        thongtinkhachhang.classList.remove('hide-thong-tin-khach-hang');
+        chonghe.classList.remove('showchonghe');
+    }
+
+    var quaylaichonghe = document.getElementById('quaylaichonghe');
+    quaylaichonghe.onclick = function() {
+        chonghe.classList.add('showchonghe');
+        thongtinkhachhang.classList.add('hide-thong-tin-khach-hang');
+    }
+
+
+    var thanhtoan = document.getElementById('thanhtoan');
+    var denthanhtoan = document.getElementById('denthanhtoan');
+    denthanhtoan.onclick = function() {
+        thanhtoan.classList.remove('hidethanhtoan');
+        thongtinkhachhang.classList.add('hide-thong-tin-khach-hang');
+    }
+
+    var quaylaithongtin = document.getElementById('quaylaithongtin');
+    quaylaithongtin.onclick = function() {
+        thanhtoan.classList.add('hidethanhtoan');
+        thongtinkhachhang.classList.remove('hide-thong-tin-khach-hang');
+    }
+
     var soGheDangChon = 0;
     var ghe = document.getElementsByClassName('seat');
     var hienThiSoGhe = document.getElementById('text-confirm');
